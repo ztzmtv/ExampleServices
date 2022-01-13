@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:text="Service" />
+        android:text="@string/simple_service" />
 
     <Button
         android:id="@+id/foregroundService"
@@ -20,6 +20,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:text="Foreground Service" />
+        android:text="@string/foreground_service" />
+
+    <Button
+        android:id="@+id/jobScheduler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/job_scheduler" />
 
 </LinearLayout>
