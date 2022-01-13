@@ -6,6 +6,7 @@ import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
+import androidx.core.content.ContextCompat
 import com.example.myservices.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,10 +20,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.justService.setOnClickListener {
-            startService(SimpleService.newIntent(this))
+            startService(SimpleService.newIntent(this, 25))
         }
         binding.foregroundService.setOnClickListener {
-            showNotification()
+            ContextCompat.startForegroundService(
+                this, (MyForegroundService.newIntent(this))
+            )
         }
     }
 
