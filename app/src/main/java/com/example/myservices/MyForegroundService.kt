@@ -24,10 +24,11 @@ class MyForegroundService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         coroutineScope.launch {
-            for (i in 1 until 100) {
+            for (i in 1 until 3) {
                 delay(1000)
                 log("$i")
             }
+            stopSelf()
         }
         log("onStartCommand")
         return START_STICKY
