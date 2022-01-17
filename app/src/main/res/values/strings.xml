@@ -4,4 +4,5 @@
     <string name="foreground_service">Foreground Service</string>
     <string name="job_scheduler">Job Scheduler</string>
     <string name="job_intent_service">Job Intent Service</string>
+    <string name="work_manager">Work Manager</string>
 </resources>

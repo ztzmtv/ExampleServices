@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/justService"
+        android:id="@+id/just_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -15,7 +15,7 @@
         android:text="@string/simple_service" />
 
     <Button
-        android:id="@+id/foregroundService"
+        android:id="@+id/foreground_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -23,7 +23,7 @@
         android:text="@string/foreground_service" />
 
     <Button
-        android:id="@+id/intentService"
+        android:id="@+id/intent_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -31,7 +31,7 @@
         android:text="Intent Service" />
 
     <Button
-        android:id="@+id/jobScheduler"
+        android:id="@+id/job_scheduler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -39,11 +39,19 @@
         android:text="@string/job_scheduler" />
 
     <Button
-        android:id="@+id/jobIntentService"
+        android:id="@+id/job_intent_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:text="@string/job_intent_service" />
+
+    <Button
+        android:id="@+id/work_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/work_manager" />
 
 </LinearLayout>
